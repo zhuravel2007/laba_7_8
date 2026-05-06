@@ -2,8 +2,8 @@
 
 questions = {}
 
-def handle_form(mail, question):
-    questions[mail] = question
+def handle_form(mail, username, question):
+    questions[mail] = [username, question]
     pdb.set_trace()
 
-handle_form("user@mail.com", "Как работает pdb?")
+handle_form("user@mail.com", "Ivan", "Как работает pdb?")
