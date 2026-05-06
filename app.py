@@ -1,9 +1,9 @@
-import pdb
+﻿import pdb
 
 questions = {}
-mail = 'ADRESS'
-text = 'QUEST'
 
-questions[mail] = text
+def handle_form(mail, question):
+    questions[mail] = question
+    pdb.set_trace()
 
-pdb.set_trace()
+handle_form("user@mail.com", "Как работает pdb?")
